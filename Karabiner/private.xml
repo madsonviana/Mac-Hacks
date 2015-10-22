@@ -1,0 +1,118 @@
+<!--
+Microsoft Sculpt Comfort Mouse Binding for OSX (using Karabiner)
+modified by midnightsalesman, original by user inceax
+-->
+<?xml version="1.0"?>
+ <root>
+   <devicevendordef>
+     <vendorname>MICROSOFT</vendorname>
+     <vendorid>0x045e</vendorid>
+   </devicevendordef>
+ 
+   <deviceproductdef>
+     <productname>SCULPT_COMFORT</productname>
+     <productid>0x07b2</productid>
+   </deviceproductdef>
+
+  <vkchangeinputsourcedef>
+    <name>KeyCode::VK_CHANGE_INPUTSOURCE_ABNT2</name>
+    <inputsourceid_equal>com.apple.keylayout.Brazilian-ABNT2</inputsourceid_equal>
+  </vkchangeinputsourcedef>
+
+  <vkchangeinputsourcedef>
+    <name>KeyCode::VK_CHANGE_INPUTSOURCE_CANADIAN</name>
+    <inputsourceid_equal>com.apple.keylayout.Canadian-CSA</inputsourceid_equal>
+  </vkchangeinputsourcedef>
+
+
+   <item>
+     <name>Windows Button to Mission Control (Microsoft Sculpt Comfort Mouse)</name>
+     <identifier>com.microsoft.mouse.sculpt_comfort.win_button</identifier>
+     <device_only>DeviceVendor::MICROSOFT,DeviceProduct::SCULPT_COMFORT</device_only>
+     <autogen>
+       __KeyToKey__
+       KeyCode::OPTION_R,
+       KeyCode::MISSION_CONTROL
+     </autogen>
+   </item>
+   <item>
+     <name>Slide Up to Next Desktop (Microsoft Sculpt Comfort Mouse)</name>
+     <identifier>com.microsoft.mouse.sculpt_comfort.slide_up</identifier>
+     <device_only>DeviceVendor::MICROSOFT,DeviceProduct::SCULPT_COMFORT</device_only>
+     <autogen>
+       __KeyToKey__
+       KeyCode::DELETE, ModifierFlag::CONTROL_L | ModifierFlag::OPTION_L ,
+       KeyCode::CURSOR_RIGHT, ModifierFlag::CONTROL_L,
+     </autogen>
+   </item>
+   <item>
+     <name>Slide Down to Prev Desktop (Microsoft Sculpt Comfort Mouse)</name>
+     <identifier>com.microsoft.mouse.sculpt_comfort.slide_down</identifier>
+     <device_only>DeviceVendor::MICROSOFT,DeviceProduct::SCULPT_COMFORT</device_only>
+     <autogen>
+       __KeyToKey__
+       KeyCode::TAB, ModifierFlag::CONTROL_L | ModifierFlag::OPTION_L ,
+       KeyCode::CURSOR_LEFT, ModifierFlag::CONTROL_L,
+     </autogen>
+   </item>
+   <item>
+     <name>Scroll Left to Backward (Microsoft Sculpt Comfort Mouse)</name>
+     <identifier>com.microsoft.mouse.sculpt_comfort.scroll_left</identifier>
+     <device_only>DeviceVendor::MICROSOFT,DeviceProduct::SCULPT_COMFORT</device_only>
+     <autogen>
+       __ScrollWheelToKey__
+       ScrollWheel::LEFT,
+       KeyCode::CURSOR_LEFT, ModifierFlag::COMMAND_L
+     </autogen>
+   </item>
+   <item>
+     <name>Scroll Right to Forward (Microsoft Sculpt Comfort Mouse)</name>
+     <identifier>com.microsoft.mouse.sculpt_comfort.scroll_right</identifier>
+     <device_only>DeviceVendor::MICROSOFT,DeviceProduct::SCULPT_COMFORT</device_only>
+     <autogen>
+       __ScrollWheelToKey__
+       ScrollWheel::RIGHT,
+       KeyCode::CURSOR_RIGHT, ModifierFlag::COMMAND_L
+     </autogen>
+   </item> 
+	<item>
+     <name>Delete Key to Delete (Microsoft Sculpt Comfort Keyboard)</name>
+     <identifier>com.microsoft.mouse.sculpt_comfort.delete</identifier>
+     <device_only>DeviceVendor::MICROSOFT,DeviceProduct::SCULPT_COMFORT</device_only>
+     <autogen>
+       __KeyToKey__
+       KeyCode::FORWARD_DELETE,
+       KeyCode::DELETE
+     </autogen>
+   </item>
+   <item>
+     <name>Search Button Refresh (Microsoft Sculpt Comfort Keyboard)</name>
+     <identifier>com.microsoft.mouse.sculpt_comfort.search_button</identifier>
+     <device_only>DeviceVendor::MICROSOFT,DeviceProduct::SCULPT_COMFORT</device_only>
+     <autogen>
+       __KeyToKey__
+       KeyCode::OPTION_L | ModifierFlag::SHIFT_L,
+       KeyCode::R, ModifierFlag::COMMAND_L
+     </autogen>
+   </item>
+   <item>
+     <name>Change Layout (Microsoft Sculpt Comfort Keyboard)</name>
+     <identifier>com.microsoft.mouse.sculpt_comfort.change_layout</identifier>
+     <device_only>DeviceVendor::MICROSOFT,DeviceProduct::SCULPT_COMFORT</device_only>
+     <autogen>
+       __KeyToKey__
+       KeyCode::OPTION_L | ModifierFlag::COMMAND_L,
+       KeyCode::VK_CHANGE_INPUTSOURCE_ABNT2
+     </autogen>
+   </item>
+
+   <item>
+     <name>Change Layout (Internal Keyboard)</name>
+     <identifier>com.microsoft.mouse.sculpt_comfort.change_layout_internal</identifier>
+     <autogen>
+       __KeyToKey__
+       ConsumerKeyCode::EJECT,
+       KeyCode::VK_CHANGE_INPUTSOURCE_CANADIAN
+     </autogen>
+   </item>
+ </root>
